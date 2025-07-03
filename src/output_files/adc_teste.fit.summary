@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Jul 03 13:23:26 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : adc_teste
+Top-level Entity Name : top
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total logic elements : 11,337 / 49,760 ( 23 % )
+    Total combinational functions : 6,851 / 49,760 ( 14 % )
+    Dedicated logic registers : 7,901 / 49,760 ( 16 % )
+Total registers : 7901
+Total pins : 36 / 360 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 8,448 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 1 / 2 ( 50 % )

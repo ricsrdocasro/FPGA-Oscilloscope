@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity vga_demo is
+	port(
+		MAX10_CLK_50 	:	in		std_logic;
+		VGA_R				:	out	std_logic_vector(3 downto 0);
+		VGA_G				:	out	std_logic_vector(3 downto 0);
+		VGA_B				:	out	std_logic_vector(3 downto 0);
+		VGA_HS, VGA_VS :	out	std_logic
+	)
+end entity

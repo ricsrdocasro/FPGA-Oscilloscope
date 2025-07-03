@@ -1,0 +1,73 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity adc_teste is
+	port(
+		MAX10_CLK1_50		:		in		std_logic;
+		HEX2					:		out	std_logic_vector(0 to 6);
+		HEX1					:		out	std_logic_vector(0 to 6);
+		HEX0					:		out	std_logic_vector(0 to 6)
+	);
+end entity;
+
+architecture comportamental of adc_teste is
+	component adcteste is
+        port (
+            CLOCK : in  std_logic                     := 'X'; -- clk
+            RESET : in  std_logic                     := 'X'; -- reset
+            CH0   : out std_logic_vector(11 downto 0);        -- CH0
+            CH1   : out std_logic_vector(11 downto 0);        -- CH1
+            CH2   : out std_logic_vector(11 downto 0);        -- CH2
+            CH3   : out std_logic_vector(11 downto 0);        -- CH3
+            CH4   : out std_logic_vector(11 downto 0);        -- CH4
+            CH5   : out std_logic_vector(11 downto 0);        -- CH5
+            CH6   : out std_logic_vector(11 downto 0);        -- CH6
+            CH7   : out std_logic_vector(11 downto 0)         -- CH7
+        );
+    end component adcteste;
+	 
+	 signal data	:	std_logic_vector(11 downto 0);
+	 
+	 type seven_seg_type is array (0 to 15) of std_logic_vector(6 downto 0);7
+	 
+	 constant SEGMENT_MAP	:	seven_seg_type	:=	(
+			"0000001",
+			"1001111",
+			"0010010",
+			"0000110",
+			"1001100",
+			"0100100",
+			"0100000",
+			"0001111",
+			"0000000",
+			"0000100",
+			"0001000",
+			"1100000",
+			"0110001",
+			"1000010",
+			"0110000",
+			"0111000"
+	 );
+
+begin
+
+	u0 : component adcteste
+        port map (
+            CLOCK => MAX10_CLK1_50, --      clk.clk
+            RESET => '1', --    reset.reset
+            CH0   => data,   -- readings.CH0
+            CH1   => open,   --         .CH1
+            CH2   => open,   --         .CH2
+            CH3   => open,   --         .CH3
+            CH4   => open,   --         .CH4
+            CH5   => open,   --         .CH5
+            CH6   => open,   --         .CH6
+            CH7   => open    --         .CH7
+        );
+		  
+	HEX0 <= SEGMENT_MAP(to_integer(unsigned(data(3 downto 0))));
+	HEX1 <= SEGMENT_MAP(to_integer(unsigned(data(7 downto 4))));
+	HEX2 <= SEGMENT_MAP(to_integer(unsigned(data(11 downto 8))));
+	
+end architecture;
