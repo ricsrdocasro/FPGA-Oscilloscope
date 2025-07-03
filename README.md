@@ -133,8 +133,8 @@ This project was developed as the final assignment for the **Reconfigurable Comp
 
 Videos created by **Dr. Felipe Pfrimer**, my professor in the Reconfigurable Computing class, demonstrating key concepts used in this project:
 
-🎥 [Using VGA to Display a Square Wave](https://www.youtube.com/watch?v=vtO__1C_Y7g)  
-🎥 [Drawing Real Signals on VGA](https://www.youtube.com/watch?v=opieJgy_Qfo)
+🎥 [Operate VGA port with VHDL and FPGA](https://www.youtube.com/watch?v=vtO__1C_Y7g)  
+🎥 [Using the ADC of the DE-10 Lite kit](https://www.youtube.com/watch?v=opieJgy_Qfo)
 
 </div>
 
