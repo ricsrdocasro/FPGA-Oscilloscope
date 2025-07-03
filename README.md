@@ -22,6 +22,7 @@ A fully functional digital oscilloscope implemented on the **Intel/Altera DE10-L
   <br/>
   <em>Application example: EMG signal acquisition and visualization</em>
 </div>
+
 ---
 
 ## 🧠 Project Structure
@@ -122,13 +123,35 @@ Draws waveforms on the VGA screen:
 
 ---
 
-## 📜 License
+## 🙌 Acknowledgments
 
-This project is open-source under the MIT License. Feel free to adapt and improve it for your own applications!
+This project was developed as the final assignment for the **Reconfigurable Computing** course in my **Electronics Engineering** degree program. It showcases the practical application of VHDL, FPGA-based signal processing, and VGA output for real-time analog signal visualization.
 
 ---
 
-## 🙌 Acknowledgments
+## 📚 Sources
 
-This work was developed as part of a practical lab for real-time signal acquisition and visualization. Special thanks to our team and lab for the support and testing environment.
+Videos created by **Dr. Felipe Pfrimer**, my professor in the Reconfigurable Computing class, demonstrating key concepts used in this project:
+
+🎥 [Using VGA to Display a Square Wave](https://www.youtube.com/watch?v=vtO__1C_Y7g)  
+🎥 [Drawing Real Signals on VGA](https://www.youtube.com/watch?v=opieJgy_Qfo)
+
+<details>
+<summary>Click to view embedded videos (if supported)</summary>
+
+<br>
+
+<div align="center">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vtO__1C_Y7g" frameborder="0" allowfullscreen></iframe>
+
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/opieJgy_Qfo" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+</details>
+
+---
 
