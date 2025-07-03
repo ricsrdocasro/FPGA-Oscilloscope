@@ -136,19 +136,6 @@ Videos created by **Dr. Felipe Pfrimer**, my professor in the Reconfigurable Com
 🎥 [Using VGA to Display a Square Wave](https://www.youtube.com/watch?v=vtO__1C_Y7g)  
 🎥 [Drawing Real Signals on VGA](https://www.youtube.com/watch?v=opieJgy_Qfo)
 
-<details>
-<summary>Click to view embedded videos (if supported)</summary>
-
-<br>
-
-<div align="center">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vtO__1C_Y7g" frameborder="0" allowfullscreen></iframe>
-
-<br><br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/opieJgy_Qfo" frameborder="0" allowfullscreen></iframe>
-
 </div>
 
 </details>
